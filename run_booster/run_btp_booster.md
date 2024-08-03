@@ -10,6 +10,6 @@
 ![run_booster](5.png)
 6. Click **Next**.
 7. Validate the information on the summary screen and click **Finish**.</br>
-![run_booster](6.jpg)
+![run_booster](6.png)
 8. Confirm the booster execution is successful and click **Close**.</br>
 ![run_booster](7.png)
