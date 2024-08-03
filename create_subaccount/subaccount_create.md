@@ -10,7 +10,7 @@
 
 4. Specify **Display Name** and **Region** and click **Create**.</br>                              
 ![run_booster](3-1.jpg)   
-**Note**: The **Region** must be from one of the supported data centers for Joule and correspond to your SuccessFactors tenant.  See [Data Center Mapping between SAP SuccessFactors and Joule](https://help.sap.com/docs/joule/serviceguide/data-center-mapping-between-sap-successfactors-and-joule)
+**Note**: The **Region** must be from one of the supported data centers for Joule.  See [Data Centers Supported by Joule](https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule)
 
 5. Click **Enable Cloud Foundry**.</br>  
 ![run_booster](4.jpg)
