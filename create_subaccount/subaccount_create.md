@@ -53,7 +53,7 @@
 1. From the Navigation Pane, select **Settings** and click **Add**.</br>
 ![run_booster](14.jpg)
 
-2. Add your **SAP S/4 HAANA Cloud Private Edition tenant domain** and click **Add**.  For example, https:///hcm-us10.hr.cloud.sap.                  
-**NOTE**:  Do not add trailing slash(/) at the end of the URL.</br>    
+2. Add your **SAP S/4 HAANA Cloud Private Edition tenant domain** and click **Add**.  For example, https:///*.cloud.sap.                  
+**NOTE**:  I chose to trust cloud.sap domain but you may put your specific S/4 domain here.  Do not add trailing slash(/) at the end of the URL.</br>    
 ![run_booster](15.jpg)
  
