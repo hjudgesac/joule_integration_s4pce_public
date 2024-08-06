@@ -28,7 +28,7 @@
  ![create_destination](3.jpg)
   
 4. Click **Create Destinations** to create a new destination using the information below and click **Save**:
-   * Name: **joulert**
+  * Name: **joulert**
   * Type: **HTTP**
   * URL: **https://S4virtualhost:port**  (See Cloud Connector Configuration to get Virtual Host and Port for your system)
   * Proxy Type: **OnPremise**
@@ -45,7 +45,7 @@
  ![create_destination](4.jpg)
 
 5. Click **Create Destinations** to create a new destination using the information below and click **Save**:
-   * Name: **privatecloud**
+  * Name: **privatecloud**
   * Type: **HTTP**
   * URL: **https://S4virtualhost:port**  (See Cloud Connector Configuration to get Virtual Host and Port for your system)
   * Proxy Type: **OnPremise**
