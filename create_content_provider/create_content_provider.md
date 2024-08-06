@@ -20,9 +20,9 @@
 ![create_content_provider](6.jpg)
 
 8. Add a new content provider using the information below and click **Save**:
-  * Title: <-- Title of your choice eg. **joules4pce** -->
-  * Design-Time Destination: <-- Design time destination created earlier eg. **jouledt** -->
-  * Runtime Destination: <-- Runtime destination created by the booster eg. **joulert** -->
+  * Title: <-- Title of your choice eg. joules4pce -->
+  * Design-Time Destination: <-- Design time destination created earlier eg. jouledt -->
+  * Runtime Destination: <-- Runtime destination created earlier eg. joulert -->
   * Runtime Destination for Dynamic Data: **Use default runtime destination**
   * Automatically add all content items to subccount: **toggle enabled**
   * Use the Identity Provisioning Service to provision user authorizations: **toggle enabled**
