@@ -15,22 +15,44 @@
 ![create_destination](2.jpg)
  
 3. Click **Create Destinations** to create a new destination using the information below and click **Save**:
-  * Name: **LPS_SFSF_dt**
+  * Name: **jouledt**
   * Type: **HTTP**
-  * URL: <-- https://yourSFSFtenantAPIURL/rest/servicesfoundation/sfcdmcontentservice/v1/SFCDMContent  (see preparation section to find the API URL for your SuccessFactors instance-->
-  * Proxy Type: **Internet**
+  * URL: https://S4virtualhost:port/sap/bc/ui2/cdm3/entities  (See Cloud Connector Configuration to get Virtual Host and Port for your system)
+  * Proxy Type: **OnPremise**
   * Authentication: **BasicAuthentication**
-  * User: <-- SAP SuccessFactors username with oData API access and company ID in the format of **username@COMPANYID** (see preparation section for more information on how to create this API User) -->
+  * Location ID: <--Location ID specified in Cloud Connector (if any) -->
+  * User: <-- S4 username with right access (see preparation section for more information) -->
   * Password: <-- Password for the user above -->
   * Use default JDK truststore: **checked**
-  * **New Property** >> **HTML5.DynamicDestination**: **true**</br>
+  * **New Property** >> **sap-client**: **<--Client ID of your S4 tenant-->**</br>
  ![create_destination](3.jpg)
   
-4. Click the pencil icon to edit the **LPS_SFSF_rt** destination that is automatically created by the booster you ran earlier.</br>
-![create_destination](4.jpg)
+4. Click **Create Destinations** to create a new destination using the information below and click **Save**:
+   * Name: **joulert**
+  * Type: **HTTP**
+  * URL: **https://S4virtualhost:port**  (See Cloud Connector Configuration to get Virtual Host and Port for your system)
+  * Proxy Type: **OnPremise**
+  * Authentication: **BasicAuthentication**
+  * User: <-- S4 username with right access (see preparation section for more information) -->
+  * Password: <-- Password for the user above -->
+  * Location ID: <--Location ID specified in Cloud Connector (if any) -->
+  * Use default JDK truststore: **checked**
+  * **New Property** >> **sap-client**: **<--Client ID of your S4 tenant-->**
+  * **New Property** >> **sap-platform**: **ABAP**
+  * **New Property** >> **sap-service**: **<--Instance number of your S4 system with 00 appended to the end-->**
+  * **New Property** >> **sap-sysid**: **<-- System ID of your S4 system-->**
+  * **New Property** >> **HTML5.DynamicDestination**: **true**</br>
+ ![create_destination](4.jpg)
 
-5. Click **New Property** and type **sap-start**.  Set the value of of the propery to **true** and **Save** the destination.</br>
-![create_destination](5.jpg)</br>
-**Important**: You may also need to the update the URL parameter in this destination in certain scnearios.  For customers whose SuccessFactors tenants are migrated to **Common Super Domain(CSD)** or access SuccessFactors through a **reverse proxy** need to update the URL parameter to match to their CSD or reverse proxy URL.  
-**Note**: **sap-start** must be all in lower case.
+5. Click **Create Destinations** to create a new destination using the information below and click **Save**:
+   * Name: **privatecloud**
+  * Type: **HTTP**
+  * URL: **https://S4virtualhost:port**  (See Cloud Connector Configuration to get Virtual Host and Port for your system)
+  * Proxy Type: **OnPremise**
+  * Authentication: **Principal Propagation**
+  * Location ID: <--Location ID specified in Cloud Connector (if any) -->
+  * Use default JDK truststore: **checked**
+  * **New Property** >> **nameIdFormat**: **tc:SAML:1.1:nameid-format:emailAddress**
+  * **New Property** >> **sap-card-nominations-path**: **/sap/opu/odata4/ui2/insights_srv/srvd/ui2/insights_cards_read_srv/0001/CEP_Cards?$expand=DescriptorResources**</br>
+ ![create_destination](5.jpg) 
 
