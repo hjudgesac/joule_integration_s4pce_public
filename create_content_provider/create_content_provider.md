@@ -20,10 +20,13 @@
 ![create_content_provider](6.jpg)
 
 8. Add a new content provider using the information below and click **Save**:
-  * Title: <-- Title of your choice eg. **s4pce** -->
+  * Title: <-- Title of your choice eg. **joules4pce** -->
   * Design-Time Destination: <-- Design time destination created earlier eg. **jouledt** -->
   * Runtime Destination: <-- Runtime destination created by the booster eg. **joulert** -->
-  * Runtime Destination for Dynamic Data: **Use default runtime destination**                   
+  * Runtime Destination for Dynamic Data: **Use default runtime destination**
+  * Automatically add all content items to subccount: **toggle enabled**
+  * Use the Identity Provisioning Service to provision user authorizations: **toggle enabled**
+  * Include group and catalog assignment to roles: **toggle enabled**                
 **Note**: Make a note of the **ID** that is generated automatically on this screen.  This ID is required when we setup the user provisioning job to SAP Build Work Zone in later steps.</br>                         
 ![create_content_provider](7.jpg)
 
