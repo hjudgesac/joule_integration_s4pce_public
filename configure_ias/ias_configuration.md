@@ -21,7 +21,7 @@
  * Scenario 3: 3rd party IDP is setup as the Default Identity Provider eg. OKTA in my screenshot below.</br>
 ![update_ias](9-1.jpg)
 
-6. Switch to the application created for Joule by the BTP booster that was executed earlier.  The application name should be with the format **das-ias (Name of your subaccount)**. Set the **Conditional Authentication** settings for this application to match exactly what was set for the SAP S/4HANA application.  For eg. if the S/4HANAN application is setup with Scenario 3, you must also change Default Identifier in this application accordingly.</br>               
+6. Switch to the application created for Joule by the BTP booster that was executed earlier.  The application name should be with the format **das-ias (Name of your subaccount)**. Set the **Conditional Authentication** settings for this application to match exactly what was set for the SAP S/4HANA application.  For eg. if the S/4HANA application is setup with Scenario 3, you must also change Default Identifier in this application accordingly.</br>               
 ![create_trust](image.png)
 
 ## **Update Trusted Domains settings**
